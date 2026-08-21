@@ -1,6 +1,6 @@
 [build]
   command = "node build-config.cjs"
-  publish = "."
+  publish = "your-correct-directory"
 
 [[headers]]
   for = "/config.js"
