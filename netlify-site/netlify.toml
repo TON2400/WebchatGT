@@ -1,6 +1,6 @@
 [build]
   command = "node build-config.cjs"
-  publish = "netlify-site/dist"
+  publish = "dist"
   environment = { SECRETS_SCAN_ENABLED = "false" }
   base = "netlify-site"
 
