@@ -1,0 +1,8 @@
+[build]
+  command = "node build-config.cjs"
+  publish = "."
+
+[[headers]]
+  for = "/config.js"
+  [headers.values]
+    Cache-Control = "no-store"
