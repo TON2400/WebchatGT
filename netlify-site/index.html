@@ -680,8 +680,8 @@
 
   <script>
     const runtimeConfig = window.APP_CONFIG || {};
-    const SUPABASE_URL = runtimeConfig.SUPABASE_URL || "PASTE_YOUR_SUPABASE_URL_HERE";
-    const SUPABASE_ANON_KEY = runtimeConfig.SUPABASE_ANON_KEY || "PASTE_YOUR_SUPABASE_ANON_KEY_HERE";
+    const SUPABASE_URL = process.env.SUPABASE_URL;
+    const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY;
 
     const isConfigured = !SUPABASE_URL.includes("PASTE_") && !SUPABASE_ANON_KEY.includes("PASTE_");
     const client = isConfigured ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
