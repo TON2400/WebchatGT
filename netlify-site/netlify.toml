@@ -1,6 +1,7 @@
 [build]
   command = "node build-config.cjs"
   publish = "your-correct-directory"
+  environment = { SECRETS_SCAN_ENABLED = "false" }
 
 [[headers]]
   for = "/config.js"
